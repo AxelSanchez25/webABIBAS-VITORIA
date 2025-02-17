@@ -1,0 +1,428 @@
+@media(min-width: 250px) and (max-width:1100px){
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body{
+        font-family: general;
+        background-color: #ffffff;
+    }
+    
+    @font-face {
+        font-family: nav;
+        src: url(estilonav/Fashionable.ttf)
+    }
+    
+    @font-face {
+        font-family: general;
+        src: url(fuentes/Poppins-Light.ttf);
+    }
+   
+
+    .navletra {
+        font-family: nav;
+        font-size: 2em;
+        text-align: center;
+        text-transform: capitalize;
+        text-shadow: 5px 5px 0px rgb(158, 158, 158);
+        background-color: #ffffff;
+        margin-top: 0.5em;
+    }
+    
+    .nav ul {
+        list-style-type:none;
+        overflow: hidden;
+        background-color: #ffffff;
+        display: none;
+
+    }
+
+    input:checked ~ul{
+        display: block;
+    }
+
+    .nav input{
+        display: none;
+    }
+    
+    .nav li {
+        display: inline-flex;
+
+    }
+
+    .nav label{
+        box-sizing: border-box;
+        display: inline-block;
+        border-radius: 5px;
+        width: 40px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+    }
+
+    .nav img{
+        height: 1.5em;
+    }
+    
+    .nav li a {
+        display: block;
+        color: #8c8786;
+        text-align: center;
+        padding: 14px 14px;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-left: 12em;
+    }
+    
+    .nav li a:hover:not(.active) {
+        background-color: #cac3bd;
+        
+    }
+    
+    .carrusel {
+    
+        margin: 0 auto;
+        padding: 0;
+        max-width: 100em;
+        overflow: hidden;
+        display: flex;
+    
+        >* {
+            flex: 0 0 100%;
+        }
+    }
+    
+    .group {
+        display: flex;
+        will-change: trasform;
+        animation: scrolling 20s linear infinite;
+    }
+    
+    .card {
+        width: 100%;
+        color: white;
+        border-radius: 24px;
+        box-shadow: rgb(0, 0, 0, 10%);
+        font-size: xx-large;
+        justify-content: center;
+        align-items: center;
+        min-height: 200px;
+        
+    
+    }
+    
+    .card img {
+        height: 20em;
+    }
+    
+    @keyframes scrolling {
+        0% {
+            transform: translate(0);
+        }
+    
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+    
+    .carrusel {
+        &:hover.card {
+            animation-play-state: paused;
+        }
+    }
+    
+    .ropa{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+        
+    }
+    
+    .ropa img{
+        height: 35em;
+    }
+    
+    .iz,.cen,.ri{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .btn{
+        text-decoration: none;
+        text-transform:capitalize;
+        color: #414040;
+        background-color: #cac3bd;
+        border-radius: 0.5em;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+        position: absolute;
+        transform: translateY(996%);
+         height: 1.5em;
+         width: 4em;
+         text-align: center;
+         text-transform: uppercase;
+    }
+    
+    .btn:hover{
+        background-color: #eee6de;
+    }
+    
+    .unete{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-transform: uppercase;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    
+    .unete input[tex_corre]{
+        height: 2em;
+        width: 15em;
+        border: 0.1em solid #8c8786;
+        border-radius: 0.5em;
+        text-transform: uppercase;
+    }
+    .btn2{
+        text-decoration: none;
+        text-transform:capitalize;
+        color: #8c8786;
+        background-color: #cac3bd;
+        padding: 0.3em;
+        border-radius: 0.5em;
+        font-size: 1em;
+        transition: background-color 0.3s ease;
+    }
+    .unete input:hover{
+        border: 0.1em solid #000000;
+    
+    }  
+   .pie-de-pagina{
+    background-color: #414040;
+   
+   }
+
+   .redes{
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 1em;
+   }
+
+   .pie-de-pagina a{
+    color: #eee6de;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 20px;
+   }
+
+   .pie-de-pagina img{
+    height: 20px;
+   }
+
+   .politicas{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 1em;
+    line-height: 0.5em;
+   }
+
+   .politicas .poli{
+    text-align: center;
+    color: #eee6de;
+    font-size: 7px;
+    padding: 0;
+}
+
+}
+
+@media(min-width: 1080px) and (max-width:2500px){
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body{
+        font-family: general;
+        background-color: #ffffff;
+    }
+    
+    @font-face {
+        font-family: nav;
+        src: url(estilonav/Fashionable.ttf)
+    }
+    
+    @font-face {
+        font-family: general;
+        src: url(fuentes/Poppins-Light.ttf);
+    }
+   
+
+    .navletra {
+        font-family: nav;
+        font-size: 3em;
+        text-align: center;
+        text-transform: capitalize;
+        text-shadow: 5px 5px 0px rgb(158, 158, 158);
+        background-color: #ffffff;
+        margin-top: 0.5em;
+    }
+    
+    .nav ul {
+        list-style-type: none;
+        overflow: hidden;
+        background-color: #ffffff;
+    }
+
+    .nav img{
+        height: 2em;
+    }
+   
+    .nav li {
+        display: inline-flex;
+    }
+
+    .nav label{
+        box-sizing: border-box;
+        display: inline-block;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .nav label{
+        display: none;
+        user-select: none;
+
+    }
+
+    #menu{
+        appearance: none;
+    }
+
+ 
+
+    
+    .nav li a {
+        display: block;
+        color: gainsboro;
+        color: #8c8786;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-left: 10em;
+    }
+    
+    .nav li a:hover:not(.active) {
+        background-color: #cac3bd;
+        
+    }
+    .carrusel {
+    
+        margin: 0 auto;
+        padding: 0;
+        max-width: 100em;
+        overflow: hidden;
+        display: flex;
+    
+        >* {
+            flex: 0 0 100%;
+        }
+    }
+    
+    .group {
+        display: flex;
+        will-change: trasform;
+        animation: scrolling 20s  infinite;
+    }
+    
+    .card {
+        width: 100%;
+        color: white;
+        border-radius: 24px;
+        box-shadow: rgb(0, 0, 0, 10%);
+        font-size: xx-large;
+        justify-content: center;
+        align-items: center;
+        min-height: 200px;
+        
+    
+    }
+    
+    .card img {
+        height: 20em;
+    }
+    
+    @keyframes scrolling {
+        0% {
+            transform: translate(0);
+        }
+    
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+    
+    .carrusel {
+        &:hover.card {
+            animation-play-state: paused;
+        }
+    }
+
+
+    .ropa{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .ropa img{
+       height: 46em;
+       margin-left: 0.5em;
+       margin-top: 2em;
+       transition: ancho 0.1s linear;
+    }
+    .btn{
+        text-decoration: none;
+        text-transform: capitalize;
+        color: #414040;
+        background-color: #cac3bd;
+        border-radius: 0.5em;
+        font-size: 20px;
+        transition: background-color 0.3sease;
+        position: absolute;
+        transform: translateY(1315%);
+        height: 1.5em;
+        width: 6em;
+        text-align: center;
+        text-transform: uppercase;
+        margin-left: -15em;
+    
+    }
+    .btn:hover{
+        background-color: #eee6de;
+    }
+
+    .ropa img:hover{
+        height:47em;
+
+    }
+    
+}
+
